@@ -10,7 +10,7 @@
     "gobble-plugin"
   ],
   "dependencies": {
-    "uglify-js": "^2.8.29"
+    "uglify-es": "^3.3.9"
   },
   "files": [
     "index.js"
