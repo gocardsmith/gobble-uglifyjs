@@ -10,7 +10,7 @@
     "gobble-plugin"
   ],
   "dependencies": {
-    "uglify-es": "^3.3.9"
+    "terser": "^3.17.0"
   },
   "files": [
     "index.js"

@@ -4,7 +4,7 @@ function uglifyjs ( code, options ) {
 	options.fromString = true;
 	options.outSourceMap = options.sourceMap !== false;
 
-	return require( 'uglify-js' ).minify( code, options );
+	return require( 'terser' ).minify( code, options );
 }
 
 uglifyjs.defaults = {
