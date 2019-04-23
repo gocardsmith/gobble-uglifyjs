@@ -1,13 +1,15 @@
+var terser = require( 'terser' );
 module.exports = uglifyjs;
 
-function uglifyjs ( code, options ) {
-	options.fromString = true;
-	options.outSourceMap = options.sourceMap !== false;
 
-	return require( 'terser' ).minify( code, options );
+function uglifyjs ( code, options ) {
+  options.outSourceMap = options.sourceMap !== false;
+
+  console.log(`terser Options: {}`, options);
+  let minified  = terser.minify( code, options );
+  return minified;
 }
 
 uglifyjs.defaults = {
-	accept: '.js',
-	sourceMap: true
+  sourceMap: true
 };
