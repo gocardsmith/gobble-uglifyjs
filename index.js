@@ -10,5 +10,5 @@ function uglifyjs ( code, options ) {
 }
 
 uglifyjs.defaults = {
-  sourceMap: true
+  sourceMap: false
 };
